@@ -1,0 +1,11 @@
+[package]
+name = "fourier"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+num-complex = "0.4"
+core = { path = "../core" }
+ndarray = "0.15.6"        # <-- ADD THIS  
+rustfft = "6.1"         # <-- ADD THIS (required by ndarray-fft)
+# scilib is no longer needed

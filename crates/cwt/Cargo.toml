@@ -1,0 +1,11 @@
+[package]
+name = "cwt"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+core = { path = "../core" }
+fourier = { path = "../fourier" }
+waveguide = { path = "../waveguide" }
+ndarray = "0.16"
+
