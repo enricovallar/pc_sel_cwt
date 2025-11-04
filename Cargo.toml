@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/pc_core",
+    "crates/pc_fourier",
+    "crates/pc_waveguide",
+    "crates/pc_cwt",
+    "crates/pc_visualizer",
+]

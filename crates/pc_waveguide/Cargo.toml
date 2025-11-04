@@ -1,0 +1,7 @@
+[package]
+name = "pc_waveguide"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pc_core = { path = "../pc_core" }

@@ -1,0 +1,10 @@
+[package]
+name = "pc_fourier"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+num-complex = "0.4.6"
+pc_core = { path = "../pc_core" }
+scilib = "1.0.0"
+

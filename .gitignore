@@ -1,0 +1,60 @@
+# Rust / Cargo
+/target/                 # build artifacts (incremental, deps, debug, release, etc.)
+/**/target/              # any nested target directories
+
+# Generated docs and rustdoc artifacts (under target)
+target/doc/
+target/.rustc_info.json
+target/.rustdoc_fingerprint.json
+
+# IDE / editor
+.vscode/
+.idea/
+*.iml
+
+# Editor swap / backup files
+*~
+*.swp
+*.swo
+.*.sw?
+.#*
+*.orig
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs, temp
+*.log
+tmp/
+temp/
+
+# Build artifacts and caches (native libs, dylibs, etc.)
+*.rlib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Cargo package manager / lockfiles
+# If this is a library workspace you may want to ignore Cargo.lock;
+# if it's an application, commit Cargo.lock. Uncomment if you want to ignore:
+# Cargo.lock
+
+# Coverage / profiling
+coverage/
+*.profraw
+*.profdata
+
+# Node / python artifacts if present
+node_modules/
+venv/
+.env
+
+# Common Rust build-script / generated files
+**/build.rs
+target/debug/build/
+target/debug/.fingerprint/
+
+# Flycheck / editor tool output
+target/flycheck0/

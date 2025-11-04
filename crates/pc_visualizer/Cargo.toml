@@ -1,0 +1,21 @@
+[package]
+name = "pc_visualizer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pc_core = { path = "../pc_core" }
+
+# wgpu for graphics
+wgpu = "27.0.1"
+# winit for windowing (used in the example)
+winit = "0.30.12"
+# bytemuck for converting our structs to raw bytes for the GPU
+bytemuck = { version = "1.14", features = ["derive"] }
+# pollster for running async wgpu setup in a sync main function
+pollster = "0.4.0"
+# For logging wgpu errors
+env_logger = "0.11"
+log = "0.4"
+tracing = "0.1.41"
+tracing-subscriber = "0.3.20"
