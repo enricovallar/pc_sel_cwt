@@ -1,0 +1,10 @@
+[package]
+name = "pc_io"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pc_core = { path = "../pc_core" }
+hdf5 = "0.8.1"
+ndarray = "0.17.1"
+log = "0.4"

@@ -1,4 +1,5 @@
 //! crates/pc_core/src/geometry.rs
+//! Defines the geometry of holes within the unit cell.
 
 use super::lattice::Lattice;
 use super::material::Material;

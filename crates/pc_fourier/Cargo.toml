@@ -4,7 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-num-complex = "0.4.6"
+num-complex = "0.4"
 pc_core = { path = "../pc_core" }
-scilib = "1.0.0"
-
+ndarray = "0.17.1"        # <-- ADD THIS  
+rustfft = "6.1"         # <-- ADD THIS (required by ndarray-fft)
+# scilib is no longer needed

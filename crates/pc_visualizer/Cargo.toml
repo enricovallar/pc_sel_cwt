@@ -1,21 +1,20 @@
 [package]
-name = "pc_visualizer"
+name = "pc_viewer"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]] # This is also a runnable binary
+name = "pc_viewer"
+path = "src/main.rs"
+
 [dependencies]
 pc_core = { path = "../pc_core" }
-
-# wgpu for graphics
-wgpu = "27.0.1"
-# winit for windowing (used in the example)
-winit = "0.30.12"
-# bytemuck for converting our structs to raw bytes for the GPU
-bytemuck = { version = "1.14", features = ["derive"] }
-# pollster for running async wgpu setup in a sync main function
-pollster = "0.4.0"
-# For logging wgpu errors
-env_logger = "0.11"
+pc_io = { path = "../pc_io" }
+hdf5 = "0.8.1"
+ndarray = "0.17.1"
 log = "0.4"
-tracing = "0.1.41"
+tracing = "0.1"
 tracing-subscriber = "0.3.20"
+egui = "0.33.0"
+eframe = { version = "0.33.0", features = ["persistence"] }
+egui_plot = "0.34.0"

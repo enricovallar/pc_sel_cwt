@@ -1,0 +1,16 @@
+[package]
+name = "pc_geom_builder"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]] # This declares it as a runnable binary
+name = "pc_geom_builder"
+path = "src/main.rs"
+
+[dependencies]
+pc_core = { path = "../pc_core" }
+pc_io = { path = "../pc_io" }
+ndarray = "0.17.1"
+log = "0.4"
+tracing = "0.1"
+tracing-subscriber = "0.3.20"

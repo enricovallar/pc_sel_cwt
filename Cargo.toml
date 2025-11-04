@@ -6,4 +6,6 @@ members = [
     "crates/pc_waveguide",
     "crates/pc_cwt",
     "crates/pc_visualizer",
+    "crates/pc_io",           
+    "crates/pc_geom_builder", 
 ]
