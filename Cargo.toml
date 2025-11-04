@@ -1,11 +1,12 @@
 [workspace]
 resolver = "2"
 members = [
-    "crates/pc_core",
-    "crates/pc_fourier",
-    "crates/pc_waveguide",
-    "crates/pc_cwt",
-    "crates/pc_visualizer",
-    "crates/pc_io",           
-    "crates/pc_geom_builder", 
+    "crates/core",
+    "crates/fourier",
+    "crates/waveguide",
+    "crates/cwt",
+    "crates/visualizer",
+    "crates/io",           
+    "crates/geom_builder", 
+    "crates/phc",
 ]
